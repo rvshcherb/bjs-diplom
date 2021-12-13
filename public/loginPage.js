@@ -7,7 +7,7 @@ userForm.loginFormCallback = function(data) {
     if(response.success) {
       location.reload();
     } else {
-      alert(response.error);
+      this.setLoginErrorMessage(response.error);
     }
   });
 };
@@ -17,7 +17,7 @@ userForm.registerFormCallback = function(data) {
     if(response.success) {
       location.reload();
     } else {
-      alert(response.error);
+      this.setRegisterErrorMessage(response.error);
     }
   });
 };
